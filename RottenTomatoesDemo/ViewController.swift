@@ -66,7 +66,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         var movie = movies[indexPath.row]
         var posters = movie["posters"] as NSDictionary
-        var url = posters["thumbnail"]
+        var url = posters["thumbnail"] as String
         
         cell.titleLabel.text = movie["title"] as? String
         cell.synopsisLabel.text = movie["synopsis"] as? String
